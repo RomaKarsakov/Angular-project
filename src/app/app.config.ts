@@ -10,6 +10,7 @@ export const appConfig: ApplicationConfig = {
         provideAnimations(),
         provideBrowserGlobalErrorListeners(),
     provideRouter(routes),
+        provideEventPlugins(),
         provideEventPlugins()
     ]
 };
