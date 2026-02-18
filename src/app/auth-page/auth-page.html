@@ -1,2 +1,16 @@
-<p>auth-page works!</p>
-<button (click)="login()">button</button>
+<div id="body">
+  <div id="container">
+    <h1>Добро пожаловать на наш сайт с котиками!</h1>
+    <p>Только смотреть, они такие красивые и милые!</p>
+    <tui-textfield>
+      <label tuiLabel>Введите ваш логин, чтобы продолжить:</label>
+      <input
+        placeholder="Логин"
+        tuiTextfield
+        [(ngModel)]="value"
+      /></tui-textfield>
+    <button (click)="login()">Продолжить</button>
+    <p>©2026 Сайт с котиками. Все права защищены</p>
+  </div>
+</div>
+

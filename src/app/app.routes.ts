@@ -8,7 +8,7 @@ import {UserPage} from './user-page/user-page';
 export const routes: Routes = [
   {
     path: 'login',
-    component: AuthPage
+    component: AuthPage,
   },
   {
     path: "user",

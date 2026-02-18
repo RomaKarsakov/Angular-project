@@ -1,5 +1,8 @@
-<tui-segmented [(activeItemIndex)]="index">
-  <button routerLink="/home">Главная</button>
-  <button routerLink="/favorites">Избранное</button>
-  <button id="user" routerLink="/user">Пользователь</button>
-</tui-segmented>
+<div>
+  <tui-segmented [(activeItemIndex)]="index" size="l">
+    <button routerLink="/home">Главная</button>
+    <button routerLink="/favorites">Избранное</button>
+    <app-user-avatar id="user" routerLink="/user"></app-user-avatar>
+  </tui-segmented>
+</div>
+
