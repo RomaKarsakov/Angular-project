@@ -1,1 +1,36 @@
-<p>home-page works!</p>
+<div id="body">
+  <h1>Поиск картинок</h1>
+  <div id="container">
+    <tui-textfield>
+      <label tuiLabel>Поиск по названию</label>
+      <input
+        placeholder=""
+        tuiTextfield
+        [(ngModel)]="value"
+      /></tui-textfield>
+    <tui-textfield
+      multi
+      tuiChevron>
+      <label tuiLabel>Теги</label>
+      <input
+        tuiInputChip
+        tuiSelectLike
+        [placeholder]="tags.length ? '' : ''"
+        [(ngModel)]="tags"
+      />
+      <tui-data-list-wrapper
+        *tuiTextfieldDropdown
+        new
+        tuiMultiSelectGroup
+        [items]="allTags"
+      />
+    </tui-textfield>
+
+  </div>
+  <div id="cats-grid">
+    <app-cat-card
+      *ngFor="let cat of filteredCats"
+      [cat]="cat"
+    ></app-cat-card>
+  </div>
+</div>

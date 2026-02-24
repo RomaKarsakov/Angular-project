@@ -1,0 +1,18 @@
+<div id="cat-card">
+  <img
+    [src]="cat.image"
+    [alt]="cat.name"
+    class="cat-image"
+  >
+  <h2>{{ cat.name }}</h2>
+  <div class="tags">
+    <span class="tag">{{ cat.tags[0] + ", " + cat.tags[1] }}</span>
+  </div>
+  <button
+    class="favorite-btn"
+    [class.active]="isFavorite"
+    (click)="toggleFavorite($event)"
+  >
+    @if(!isFavorite){☆} @else {★} В Избранное
+  </button>
+</div>

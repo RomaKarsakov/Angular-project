@@ -1,0 +1,36 @@
+img {
+  width: 250px;
+  height: 200px;
+  transform: scale(80%);
+  margin: -5px;
+}
+#cat-card{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: solid #ff61b4 1px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: white;
+  color: black;
+}
+span{
+  text-align: center;
+  color: deeppink;
+}
+h2 {
+  margin: 5px;
+}
+button{
+  margin: 10px;
+  height: 40px;
+  width: 70%;
+  background-color: #ff41a8;
+  color: white;
+  border: hidden;
+  border-radius: 10px;
+  font-size: 12px;
+}
+button:hover{
+  background-color: #ffa3af;
+}

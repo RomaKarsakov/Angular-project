@@ -1,0 +1,26 @@
+#body{
+  margin-top: 0;
+  background-color: #ffeaed;
+  width: auto;
+  height: auto;
+  padding: 10px;
+}
+h1{
+  text-align: center;
+}
+tui-textfield{
+  width: 30vw;
+}
+#container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#cats-grid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
