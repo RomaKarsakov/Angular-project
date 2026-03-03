@@ -11,12 +11,10 @@ export class CatService {
     this.loadFavorites();
   }
 
-  // Получить всех котиков (для главной)
   getCats(): Cat[] {
     return this.allCats;
   }
 
-  // Фильтрация по названию и тегам
   filterCats(search: string, selectedTags: string[]): Cat[] {
     return this.allCats.filter(cat => {
       const matchesName = cat.name.toLowerCase().includes(search.toLowerCase());
@@ -26,14 +24,12 @@ export class CatService {
     });
   }
 
-  // Получить все уникальные теги для фильтра
   getAllTags(): string[] {
     const tagsSet = new Set<string>();
     this.allCats.forEach(cat => cat.tags.forEach(tag => tagsSet.add(tag)));
     return Array.from(tagsSet);
   }
 
-  // Избранное
   getFavorites(): Cat[] {
     return this.favorites;
   }

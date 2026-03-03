@@ -16,9 +16,11 @@ import {AsyncPipe} from '@angular/common';
 })
 export class UserAvatar implements OnInit{
   userName$!: Observable<string>;
+  userAvatar$!: Observable<string>;
   constructor(private authService: Login) { }
 
   ngOnInit(): void {
     this.userName$ = this.authService.userName$;
+    this.userAvatar$ = this.authService.userAvatar$;
   }
 }

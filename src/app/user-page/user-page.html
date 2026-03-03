@@ -1,1 +1,25 @@
-<p>user-page works!</p>
+<div id="body">
+  <h1>Профиль</h1>
+  <div id="container">
+    <div id="avatar">
+      <tui-avatar [src]="userAvatar()" size="xxl"></tui-avatar>
+      <input id="hide" type="file" (change)="onFileChange($event)" accept="image/*"#fileUpload>
+      <button (click)="fileUpload.click()" id="photo">Загрузить фото</button>
+    </div>
+    <div id="log">
+      <h2>Логин:</h2>
+      <tui-textfield>
+        <label tuiLabel></label>
+        <input id="name"
+          placeholder=""
+          tuiTextfield
+          [(ngModel)]="value"
+        /></tui-textfield>
+      <div id="buttons">
+        <button id="save" (click)="saveButton()">Сохранить</button>
+        <button id="out" (click)="quitButton()">Выйти</button>
+      </div>
+
+    </div>
+  </div>
+</div>

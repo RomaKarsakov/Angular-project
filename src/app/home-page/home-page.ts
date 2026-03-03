@@ -23,7 +23,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home-page',
-  imports: [CommonModule, Navigator, FormsModule, TuiLabel, TuiTextfieldComponent, TuiTextfieldDirective, TuiTextfieldMultiComponent, TuiChevron, TuiInputChipDirective, TuiInputChipComponent, TuiDataListComponent, TuiMultiSelectGroupComponent, TuiItem, TuiTextfieldDropdownDirective, TuiFilterByInputPipe, TuiOptionWithValue, TuiSelectLike, TuiDataListWrapperComponent, TuiMultiSelectGroupDirective, CatCard],
+  imports: [CommonModule, Navigator, FormsModule, TuiLabel, TuiTextfieldComponent, TuiTextfieldDirective, TuiTextfieldMultiComponent, TuiChevron, TuiInputChipDirective,  TuiTextfieldDropdownDirective,  TuiSelectLike, TuiDataListWrapperComponent, TuiMultiSelectGroupDirective, CatCard],
   templateUrl: './home-page.html',
   styleUrl: './home-page.css',
   standalone: true

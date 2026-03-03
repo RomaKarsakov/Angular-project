@@ -1,0 +1,63 @@
+#hide{
+  visibility: hidden;
+}
+#avatar{
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  transform: scale(150%);
+  margin: 70px;
+}
+#container{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 10px;
+  background-color: white;
+  margin: 10% 25%;
+}
+#body{
+  margin-top: 0;
+  background-color: #ffeaed;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  min-height: 100vh;
+}
+#log{
+  margin: auto 20px;
+  width: 100%;
+}
+button{
+  border: hidden;
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#photo{
+  background-color: #ffa3af;
+  color: white;
+  font-size: 12px;
+}
+#save{
+  background-color: #ffa3af;
+  color: white;
+  font-size: 20px;
+  width: 45%;
+  margin: auto;
+}
+#out{
+  font-size: 20px;
+  margin: auto;
+  width: 45%;
+}
+#buttons{
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+}
+#name{
+  width: 100%;
+}

@@ -1,2 +1,2 @@
-<tui-avatar src="@tui.user"></tui-avatar>
+<tui-avatar [src]="userAvatar$ | async"></tui-avatar>
 <span>{{userName$ | async}}</span>
