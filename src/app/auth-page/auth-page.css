@@ -22,7 +22,7 @@ p{
   margin: 20px;
 }
 button{
-  background-color: lightpink;
+  background-color: #ffa3af;
   width: 90%;
   border: none;
   color: white;
@@ -31,5 +31,5 @@ button{
   margin: 10px;
 }
 button:hover{
-  background-color: #ffa3af;
+  background-color: #ff61b4;
 }
