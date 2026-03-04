@@ -4,6 +4,7 @@ import {routes} from '../app.routes';
 import {Router} from '@angular/router';
 import {TuiButton, TuiLabel, TuiTextfieldComponent, TuiTextfieldDirective} from '@taiga-ui/core';
 import {FormsModule} from '@angular/forms';
+import {ButtonsHover} from '../buttons-hover';
 
 @Component({
     selector: 'app-auth-page',
@@ -12,7 +13,8 @@ import {FormsModule} from '@angular/forms';
     TuiTextfieldComponent,
     TuiTextfieldDirective,
     FormsModule,
-    TuiLabel
+    TuiLabel,
+    ButtonsHover
   ],
     templateUrl: './auth-page.html',
     styleUrl: './auth-page.css',

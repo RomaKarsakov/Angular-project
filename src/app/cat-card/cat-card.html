@@ -12,6 +12,7 @@
     class="favorite-btn"
     [class.active]="isFavorite"
     (click)="toggleFavorite($event)"
+    appButtonsHover
   >
     @if(!isFavorite){☆} @else {★} В Избранное
   </button>

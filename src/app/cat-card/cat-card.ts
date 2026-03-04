@@ -3,6 +3,7 @@ import { Cat } from '../cat';
 import { CatService } from '../cat-service';
 import {NgForOf} from '@angular/common';
 import {TuiButton} from '@taiga-ui/core';
+import {ButtonsHover} from '../buttons-hover';
 
 @Component({
   selector: 'app-cat-card',
@@ -10,7 +11,8 @@ import {TuiButton} from '@taiga-ui/core';
   standalone: true,
   imports: [
     NgForOf,
-    TuiButton
+    TuiButton,
+    ButtonsHover
   ],
   styleUrls: ['./cat-card.css']
 })

@@ -4,7 +4,7 @@
     <div id="avatar">
       <tui-avatar [src]="userAvatar()" size="xxl"></tui-avatar>
       <input id="hide" type="file" (change)="onFileChange($event)" accept="image/*"#fileUpload>
-      <button (click)="fileUpload.click()" id="photo">Загрузить фото</button>
+      <button (click)="fileUpload.click()" id="photo" appButtonsHover>Загрузить фото</button>
     </div>
     <div id="log">
       <h2>Логин:</h2>
@@ -12,12 +12,12 @@
         <label tuiLabel></label>
         <input id="name"
           placeholder=""
-          tuiTextfield
           [(ngModel)]="value"
+          appButtonsHover
         /></tui-textfield>
       <div id="buttons">
-        <button id="save" (click)="saveButton()">Сохранить</button>
-        <button id="out" (click)="quitButton()">Выйти</button>
+        <button id="save" (click)="saveButton()" appButtonsHover>Сохранить</button>
+        <button id="out" (click)="quitButton()" appButtonsHover>Выйти</button>
       </div>
 
     </div>

@@ -5,6 +5,7 @@ import {TuiAvatar} from '@taiga-ui/kit';
 import {AsyncPipe, NgIf, NgOptimizedImage} from '@angular/common';
 import {TuiDialogService, TuiLabel, TuiTextfieldComponent, TuiTextfieldDirective} from '@taiga-ui/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {ButtonsHover} from '../buttons-hover';
 
 @Component({
   selector: 'app-user-page',
@@ -15,7 +16,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     ReactiveFormsModule,
     TuiLabel,
     TuiTextfieldDirective,
-    FormsModule
+    FormsModule,
+    ButtonsHover
   ],
   templateUrl: './user-page.html',
   styleUrl: './user-page.css',
